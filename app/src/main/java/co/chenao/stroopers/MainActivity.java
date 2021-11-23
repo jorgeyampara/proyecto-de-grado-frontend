@@ -1,17 +1,17 @@
 package co.chenao.stroopers;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.preference.PreferenceManager;
+
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import co.chenao.stroopers.actividades.AcercaDeActivity;
 import co.chenao.stroopers.actividades.ActivityContactos;
@@ -21,9 +21,12 @@ import co.chenao.stroopers.actividades.ActivityRiego;
 import co.chenao.stroopers.actividades.ActivityTutoriales;
 import co.chenao.stroopers.actividades.ActivityValores;
 import co.chenao.stroopers.actividades.AjustesActivity;
+import co.chenao.stroopers.actividades.LoginActivity;
 import co.chenao.stroopers.fragments.InicioFragment;
 import co.chenao.stroopers.interfaces.IComunicaFragments;
 import co.chenao.stroopers.clases.PreferenciasJuego;
+
+import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity implements IComunicaFragments, InicioFragment.OnFragmentInteractionListener{
 
@@ -84,6 +87,12 @@ public class MainActivity extends AppCompatActivity implements IComunicaFragment
     public void onFragmentInteraction(Uri uri) {
 
     }
+    @Override
+    public void inisiarSesion() {
+        Intent intent=new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
 
     @Override
     public void consultarValores() {

@@ -4,13 +4,18 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
+
+
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.getbase.floatingactionbutton.FloatingActionButton;
 
 import co.chenao.stroopers.R;
 import co.chenao.stroopers.clases.PreferenciasJuego;

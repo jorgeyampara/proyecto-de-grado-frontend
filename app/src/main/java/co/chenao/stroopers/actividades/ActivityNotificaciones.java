@@ -1,6 +1,7 @@
 package co.chenao.stroopers.actividades;
 
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivityNotificaciones extends AppCompatActivity {
 }

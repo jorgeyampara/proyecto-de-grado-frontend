@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import co.chenao.stroopers.MainActivity;
 import co.chenao.stroopers.R;
+import co.chenao.stroopers.actividades.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -27,14 +29,16 @@ public class SplashActivity extends AppCompatActivity {
                 int bandera=Integer.parseInt(preferences.getString("bandera","0"));
 
                 if (bandera==1){
-                    Intent intent=new Intent(SplashActivity.this, MainActivity.class);
-                    startActivity(intent);
+                    startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                    /*Intent intent=new Intent(SplashActivity.this, LoginActivity.class);
+                    startActivity(intent);*/
                 }else{
                     editor.putString("bandera","1");
                     editor.commit();
+                    startActivity(new Intent(SplashActivity.this,MainActivity.class));
 
-                    Intent intent=new Intent(SplashActivity.this, MainActivity.class);
-                    startActivity(intent);
+                    /*Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+                    startActivity(intent);*/
 
                     //Intent intent2=new Intent(SplashActivity.this, ContenedorInstruccionesActivity.class);
                    // startActivity(intent2);
@@ -42,7 +46,7 @@ public class SplashActivity extends AppCompatActivity {
 
                 finish();
             }
-        },3000);
+        },1000);
 
     }
 }

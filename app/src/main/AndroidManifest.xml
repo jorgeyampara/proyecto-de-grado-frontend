@@ -11,6 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".actividades.RegistrarseActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".actividades.LoginActivity" android:screenOrientation="portrait"></activity>
         <activity android:name=".actividades.AcercaDeActivity" android:screenOrientation="portrait"></activity>
         <activity android:name=".actividades.ActivityValores" android:screenOrientation="portrait"></activity>
         <activity android:name=".actividades.ActivityRiego" android:screenOrientation="portrait"></activity>
@@ -21,6 +23,7 @@
 
         <activity android:name=".MainActivity" android:screenOrientation="portrait">
         </activity>
+
         <activity android:name=".actividades.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>

@@ -1,12 +1,15 @@
 package co.chenao.stroopers.actividades;
 
+import android.app.AlertDialog;
+
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import co.chenao.stroopers.R;
 import co.chenao.stroopers.clases.PreferenciasJuego;

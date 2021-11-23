@@ -8,6 +8,7 @@ public interface IComunicaFragments {
     public void consultarLuces();
     public void consultarTutoriales();
     public void consultarContactos();
+    public void inisiarSesion();
     public void consultarNotificaciones();
 
 

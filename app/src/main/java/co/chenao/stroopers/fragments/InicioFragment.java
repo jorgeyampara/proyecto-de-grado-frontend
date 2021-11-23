@@ -1,16 +1,13 @@
 package co.chenao.stroopers.fragments;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.GridLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +15,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.gridlayout.widget.GridLayout;
 
 import co.chenao.stroopers.R;
 import co.chenao.stroopers.interfaces.IComunicaFragments;
@@ -157,7 +158,7 @@ public class InicioFragment extends Fragment {
         cardJugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                interfaceComunicaFragments.consultarValores();
+                interfaceComunicaFragments.inisiarSesion();
             }
         });
 
