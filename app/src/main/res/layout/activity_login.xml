@@ -6,40 +6,44 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".actividades.LoginActivity">
+    tools:context=".LoginActivity">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView2"
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="450dp"
             app:srcCompat="@drawable/logoletras" />
 
     </RelativeLayout>
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp">
 
     <EditText
-        android:id="@+id/correo"
+        android:id="@+id/correoElectronico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:text="Correo"
-        android:layout_marginTop="350dp"
+        android:hint="Correo"
+        android:layout_marginTop="0dp"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:drawableStart="@drawable/custom_email"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_edittext"
         />
 
     <EditText
@@ -48,8 +52,13 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:text="Contraseña"
-        android:layout_marginTop="400dp"
+        android:hint="Contraseña"
+        android:layout_marginTop="80dp"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:drawableStart="@drawable/custom_candado"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_edittext"
         />
 
     <Button
@@ -57,20 +66,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="170dp"
         android:layout_marginRight="40dp"
-        android:background="@color/colorTurquesa"
-        android:text="Iniciar Secion" />
+        android:background="@drawable/botonredondo"
+        android:text="Iniciar Secion"
+        />
 
     <Button
         android:id="@+id/crearCuenta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="250dp"
         android:layout_marginRight="40dp"
-        android:background="@color/colorTurquesa"
-        android:text="crear cuenta" />
+        android:background="@drawable/botonredondo"
+        android:text="crear cuenta"
+        />
+        <Button
+            android:id="@+id/reestablecerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/botonredondo"
+            android:text="olvide mi contraseña"
+            />
+
+  </RelativeLayout>
 
 
 </RelativeLayout>

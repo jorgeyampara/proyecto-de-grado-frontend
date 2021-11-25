@@ -6,16 +6,28 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".fragments.InicioFragment">
+    tools:context=".RegistrarseActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="450dp"
-        app:srcCompat="@drawable/logoletras" />
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="450dp"
+            app:srcCompat="@drawable/logoletras" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp">
 
     <EditText
         android:id="@+id/usuario"
@@ -23,9 +35,14 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:text="Nombre de usuario"
-        android:layout_marginTop="370dp"
-        />
+        android:hint="Nombre de usuario"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:drawableStart="@drawable/custom_usuario"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_edittext"/>
 
     <EditText
         android:id="@+id/correo"
@@ -33,9 +50,14 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:text="Correo electronico"
-        android:layout_marginTop="420dp"
-        />
+        android:hint="Correo electronico"
+        android:layout_marginTop="80dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:drawableStart="@drawable/custom_email"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_edittext"/>
 
     <EditText
         android:id="@+id/contraseña"
@@ -43,19 +65,26 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:text="Contraseña"
-        android:layout_marginTop="470dp"
-        />
+        android:hint="Contraseña"
+        android:layout_marginTop="160dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        android:drawableStart="@drawable/custom_candado"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_edittext"/>
 
     <Button
-        android:id="@+id/button2"
+
+        android:id="@+id/registrarse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="560dp"
+        android:layout_marginTop="250dp"
         android:layout_marginRight="40dp"
-        android:background="@color/colorTurquesa"
-        android:text="registrarse" />
+        android:background="@drawable/botonredondo"
+        android:text="registrarse"
+        />
 
-
+    </RelativeLayout>
 </RelativeLayout>
